@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="css/main.css"/> 
+    <title>KHUU.dev</title>
+    <link rel="shortcut icon" type="image/png" href="images/logos/white-logo.png"/>
+
+
+    <script src="js/fos.min.js"></script>
+    
+</head>
+<body>
+    <audio autoplay id="music">
+        <source src="/audio/ok4now.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var audio = document.getElementById("music");
+        audio.volume = 0.3;
+    </script>
+
+    <fos-bar position="top">
+        <div id="logobar" style="width: 75px;"><img src="images/logos/white-logo.png" alt="White Logo" style="width: 75%; height: 75%;"></div>
+
+        <fos-menu name=">">
+            <div style="min-width: 100px">Menu</div>
+            <hr>
+            <fos-menu-item href="aboutme"><img src="">About</fos-menu-item>
+            <fos-menu-item href="games"><img src="">Games</fos-menu-item>
+            <fos-menu-item href="radio"><img src="">Radio</fos-menu-item>
+            <fos-menu-item href="art3d"><img src="">3D Art</fos-menu-item>
+        </fos-menu>
+        <div id="clock"></div>
+    </fos-bar>
+    <fos-desktop iconOffset="150px">
+
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="/videos/utopia.mp4" type="video/mp4">
+        </video>
+
+		<fos-icon href="about" name="about.txt">
+            <img src="images/filetxt/filetexteditted.png" alt="About Me" title="About Me" style="width: 120%; height: 120%;">
+        </fos-icon>
+
+    
+        <fos-window name="about" title="about"> 
+			<h3>Kevin Khuu</h3>
+            Software Developer
+			<br>
+			<br>
+			Education:
+			<br>
+			Bachelor of IT - Monash University, 2021
+			<br>
+            Random stuff - Internet
+            <br>
+			<br>
+			<a href="https://github.com/notkkhuu" target="tab">Git Hub</a>
+			<br>
+			<a href="https://youtube.com/victorribeirocom" target="tab">You Tube</a>
+			<br>
+			<br>
+			notkkhuu@gmail.com
+			<br>
+			<br>        
+        </fos-window>
+    
+    </fos-desktop>
+    <script src="js/main.js"></script>
+    <div id="fgbg"></div>
+</body>
+</html>
